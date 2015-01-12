@@ -21,7 +21,7 @@
   <p>
   一直从事数据开发相关工作，从Oracle的存储过程到Hadoop平台的MapReduce，完成了RDBMS到NoSQL的转移，我的职业目标是通过最简单的方式来解开大数据的面纱，用最符合业务的语言来呈现数据中的规律，完成数据的价值转换，也是从事数据工作者的价值体现
   </p>
-  <h2>擅长</h2>
+  <h2>个人介绍</h2>
   <p><strong>概述:</strong>
   作为一名合格的工程师，能快速学习一门新的语言或者框架，能快速适应新的团队和业务环境，也能够带领团队或与他人协作完成任务
   </p>
@@ -29,13 +29,17 @@
    <dt>编程语言</dt>
    <dd>Java、Python、Shell、SQL、JavaScript：这几个是在工作中都很熟悉的，可以达到马上上手完成一项任务的水平</dd>
    <dt>平台或框架</dt>
+   <dd>Hadoop生态：了解HDFS与MapReduce原理，看过其中BloomFilter部分的源码，并提取用于业务使用。Hive、Sqoop、HBase、Kafka都有实际项目使用经验，对Storm、Titan、Mahout有过实际研究，可视化框架熟悉D3.js、Echars、Highcharts</dd>
    <dd>Oracle：比较擅长SQL优化和分析，有OCP认证</dd>
-   <dd>Hadoop生态：了解HDFS与MapReduce原理，看过其中BloomFilter部分的源码，并提取用于业务使用。Hive、Sqoop、HBase、Kafka都有实际项目使用经验，对Storm、Titan、Mahout有过实际研究</dd>
    <dd>Lucene：了解TF-IDF算法，有过实际项目经验，主要用于移动APP内搜索</dd>
    <dd>Redis：作为缓存来使用，还有就是作为消息队列来使用，通过blpop阻塞读取队列来实现消息的传递</dd>
+   <dd>其它熟练技能：AngularJS、Node.js、Git、Maven、Spring</dd>
    <dt>其它</dt>
    <dd>总结和反思是成长的必经之路，平时会有记录博客的习惯：<a href="http://blog.findhy.com/" target="new">http://blog.findhy.com</a></dd>
    <dd>沟通能力是一个工程师必备的技能，个人比较擅长将复杂的业务问题描述并梳理清楚</dd>
+   <dd>读书越多就越觉得自己知识浅薄，常有拖延，贵在坚持：<a href="http://book.douban.com/people/75301035/" target="new">http://book.douban.com/people/75301035</a></dd>
+   <dd>知乎看得多写的少：<a href="http://www.zhihu.com/people/findhy" target="new">http://www.zhihu.com/people/findhy</a></dd>
+   <dd>偶尔去墙外练练腿脚：<a href="https://twitter.com/sunwei553722769" target="new">https://twitter.com/sunwei553722769</a></dd>
   </dl>  
   <h2>工作经历</h2>
   <table>
@@ -62,7 +66,7 @@
         <p>开发广告投放系统安装列表过滤模块，业务要求将用户已经安装的APP广告过滤掉，用户量在500万，而每个用户安装的APP在50个左右，如果全部放在缓存，需要很大的内存空间，最后考虑到这样的匹配并非严格的要求是100%准确，所以后来采用了Bloom Filter算法，算法的实现部分是参考Hadoop源码的实现</p>
        </li>
        <li>
-        <p>在此期间也对Storm、Titan、Mahout都进行了预研，由于业务的推进问题，都没有投入到实际项目中去，但对个人的提高还是有一些帮助的</p>
+        <p>在此期间也对Storm、Titan、Mahout、Node.js都进行了预研，由于业务的推进问题，都没有投入到实际项目中去，但对个人的提高还是有一些帮助的</p>
        </li>
       </ul>
      </td>
@@ -72,7 +76,7 @@
     <tr>
      <th> 中科软科技股份有限公司 </th>
      <th> ETL开发工程师 </th>
-     <th> 2010.5-2014.3 </th>
+     <th> 2010.7-2014.3 </th>
     </tr>
     <tr>
      <td colspan="3">
@@ -90,7 +94,7 @@
         <p>参与FESCO外呼管理系统开发，该系统主要用来给呼叫中心Call Center进行呼叫任务管理，主要功能有呼叫任务接受、呼叫任务分配和处理以及结果反馈等。其中任务接受和反馈都需要和其它业务子系统进行交互，交互方式是通过Webservice调用，服务端Webservice基于CXF搭建，并使用SOAPUI进行测试</p>
        </li>
        <li>
-        <p>参与北京市园林绿化局生态管理系统开发，该项目是北京市园林绿化局对北京市各个区县的绿化情况进行统计，通过FusionCharts展现出图形报表。功能主要包括：指标管理、公式管理、主题管理的开发。数据分析和展示
+        <p>参与北京市园林绿化局生态管理系统开发，该项目是北京市园林绿化局对北京市各个区县的绿化情况进行统计，通过FusionCharts展现出图形报表。功能主要包括：指标管理、公式管理、主题管理的开发以及数据分析和展示
        </p></li>
       </ul>
      </td>
@@ -102,6 +106,7 @@
    <tbody>
     <tr>
      <th>河北理工大学</th>
+	 <th>计算机科学与技术</th>
      <th> 本科 </th>
      <th> 2006.9-2010.7 </th>
     </tr>
@@ -109,13 +114,14 @@
   </table>
   <h2>部分代码</h2>
   <dl>
-   <dt>HBase的一个分页实现</dt>
-   <dd><code><a href="https://github.com/findhy/hbase-page" target="new">https://github.com/findhy/hbase-page</a></code></dd>
    <dt>Storm与Kafka集成测试框架</dt>
    <dd><code><a href="https://github.com/findhy/storm-kafka" target="new">https://github.com/findhy/storm-kafka</a></code></dd>
    <dt>Titan前端可视化例子</dt>
    <dd><code><a href="https://github.com/titan-cn/titan-vivagraph" target="new">https://github.com/titan-cn/titan-vivagraph</a></code></dd>
    <dt>Mahout测试例子</dt>
    <dd><code><a href="https://github.com/findhy/mahout-example" target="new">https://github.com/findhy/mahout-example</a></code></dd>
+   <dt>HBase的一个分页实现</dt>
+   <dd><code><a href="https://github.com/findhy/hbase-page" target="new">https://github.com/findhy/hbase-page</a></code></dd>
   </dl>
-</body></html>
+</body>
+</html>
